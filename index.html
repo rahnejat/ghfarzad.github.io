@@ -1,6 +1,6 @@
 <html>
     <head>
-      <title>Express</title>
+      <title>RE</title>
       <link rel="stylesheet" href="/stylesheets/style.css">
         <meta aframe-injected="" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover">
         <meta aframe-injected="" name="mobile-web-app-capable" content="yes">
@@ -30,7 +30,6 @@
         </style>
 
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-        <script src="javascripts/app.js"></script>
     </head>
 
     <body style="margin : 0px; overflow: hidden;">
@@ -38,6 +37,7 @@
       <div class="arjs-loader">
         <div>Loading, please wait...</div>
       </div>
+      <button>Click me</button>
       <a-scene
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
@@ -52,6 +52,7 @@
           smoothCount="10"
           smoothTolerance=".01"
           smoothThreshold="5"
+          emitevents="true"
         >
           <a-entity
             gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
@@ -64,5 +65,6 @@
       </a-scene>
     </body>
 
+    <script src="javascripts/app.js"></script>
 </html>
 
