@@ -2,28 +2,15 @@
     <head>
         <title>RE</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-        <meta aframe-injected="" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover">
-        <meta aframe-injected="" name="mobile-web-app-capable" content="yes">
-        <meta aframe-injected="" name="theme-color" content="black">
-
-        <!--script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script-->
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <!--script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script-->
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     </head>
 
     <body>
       <!-- minimal loader shown until image descriptors are loaded -->
-      <div class="arjs-loader">
-        <div>Loading, please wait...</div>
-      </div>
-      <button>Click me</button>
       <a-scene
-        vr-mode-ui="enabled: false;"
-        renderer="logarithmicDepthBuffer: true;"
         embedded
-        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+        arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
       >
         <a-marker preset="hiro">
             <a-entity
