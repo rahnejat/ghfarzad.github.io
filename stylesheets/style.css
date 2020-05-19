@@ -1,5 +1,7 @@
 body {
+    margin : 0px;
     padding: 50px;
+    overflow: hidden;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -23,5 +25,5 @@ a {
 .arjs-loader div {
     text-align: center;
     font-size: 1.25em;
-    color: white;
+    color: blue;
 }
